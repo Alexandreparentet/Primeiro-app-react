@@ -1,14 +1,16 @@
 import './Header.css';
 
 // Component
-function Header() {
+function Header(props) {
     return(
         <>
             <header>
-                Este é o Header
+               <h1>{props.logo}</h1>
             </header>
         </>
     );
 }
 
 export default Header;
+
+
